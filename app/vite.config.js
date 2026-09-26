@@ -5,6 +5,6 @@ import tailwindcss from "@tailwindcss/vite";
 const isGitHubActions = process.env.GITHUB_ACTIONS === "true";
 
 export default defineConfig({
-  base: isGitHubActions ? "/Portfolio/" : "/",
+  base: isGitHubActions ? "/portfolio/" : "/",
   plugins: [react(), tailwindcss()],
 });
